@@ -2,24 +2,55 @@
 /* Choose this font to make it look like handwriting */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /* Choose this font for good printing */
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+/* Choosing this font for digital clock */
 :root {
     /* fonts */
     --handwriting: 'Caveat', cursive;
     --print: 'Open Sans', sans-serif;
+    --digital:'Orbitron', sans-serif;
+    /* color palette - Paris */
+    --iceberg: #D9EcF2;
+    --froly: #f56A79;
+    --coralred: #ff414d;
+    --easternblue: #1AA6b7;
+    --prussianblue: #002d40;
+
 }
 
+/* jumbotron */
 
-h1 {
+.jumbotron {
+    text-align: center;
+    background-color: var(--prussianblue);
+    color: var(--iceberg);
+   
+}
+
+/* h1.title-area fonts and animation */
+/* styling css into a digital clock by using Omitron fonts */
+
+h1.title-area {
+    animation: fadeInOut 2s ease-in-out infinite;
+    opacity: 0;
     font-family: var(--handwriting);
+    font-weight: 500;
+    font-size: 6vw;
+    /* vw for responsive 1vw = 1% of viewport width*/
 }
 
-h2 {
-    font-family: var(--print);
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
-h3 {
-    
+#currentDay {
+    font-family: var(--digital);
 }
-
-
