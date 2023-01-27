@@ -54,3 +54,41 @@ h1.title-area {
 #currentDay {
     font-family: var(--digital);
 }
+
+/* Container */
+
+
+
+/* TextArea */
+
+textarea {
+    background-color: var(--iceberg);
+    font-family: var(--handwriting);
+    font-size: 25px;
+}
+
+textarea:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* saveBtn */
+
+.saveBtn {
+    background-color: var(--froly);
+   
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: var(--prussianblue);
+    color: var(--iceberg);
+    padding: 20px;
+}
+
+h1 {
+    font-family: var(--handwriting);
+    animation: fadeInOut 2s ease-in-out infinite;
+}
